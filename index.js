@@ -27,7 +27,7 @@ function checkGuess(){
         lastResult.style.backgroundColor = "#2ab452";
         lastResult.classList.add("lastResultActive");
         lowOrHi.textContent = "";
-        var correct = new Audio("./correct-6033.mp3");
+        var correct = new Audio("./audio/correct-6033.mp3");
         correct.play();
         gameOver();
     }
@@ -36,7 +36,7 @@ function checkGuess(){
         lastResult.classList.add("gameover");
 
         lowOrHi.textContent = "";
-        const over = new Audio("./game-over-160612.mp3");
+        const over = new Audio("./audio/game-over-160612.mp3");
         over.play();
 
         gameOver();
@@ -46,7 +46,7 @@ function checkGuess(){
         lastResult.style.backgroundColor = "red";
         lastResult.classList.add("lastResultActive");
 
-        const wrong = new Audio("./error-4-199275.mp3");
+        const wrong = new Audio("./audio/error-4-199275.mp3");
         wrong.play();
 
         if(userGuess < randomNumber){
