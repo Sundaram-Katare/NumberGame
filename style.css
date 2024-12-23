@@ -1,0 +1,105 @@
+body{
+    
+    margin: 20px;
+    background: linear-gradient(45deg, blue, skyblue);
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; 
+}
+
+img{
+    height: 188px;
+    border-radius: 15px;
+}
+
+p{
+    font-size: 25px;
+    width: 600px;
+    margin: 25px;
+    font-family : 'Arial Narrow Bold', sans-serif;
+    font-weight: 700;
+}
+
+#rules{
+    color: white;
+}
+
+.form label{
+    font-size: 35px;
+    margin: 40px;
+    color: linen;
+    font-family: cursive;
+}
+
+#guessField{
+    height: 30px;
+    width: 140px;
+    border-radius: 25px;
+}
+
+#guessSubmit{
+    height: 40px;
+    width: auto;
+    padding: 10px;
+    margin-left: 20px;
+    border-radius: 10px;
+    background-color: lime;
+    font-weight: 700;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.guesses{
+    font-family : 'Arial Narrow Bold', sans-serif;
+    padding: 25px;
+    background-color: white;
+    border: 3px solid black;   
+}
+
+.lastResultActive{
+    padding: 25px;
+    text-align: center;
+    color: white;
+    border-radius: 15px;
+    border: 3px solid black;
+}
+
+.reset{
+    padding: 15px;
+    border-radius: 15px;
+    background-color: black;
+    color: #cdd8ff;
+    font-weight: 900;
+    font-family: monospace;
+    font-size: 15px;
+    align-self: center;
+    margin-left: 45%;
+    cursor: pointer;
+}
+
+.gameover{
+    padding: 25px;
+    text-align: center;
+    color: white;
+    border-radius: 15px;
+    border: 3px solid black;
+    animation: blink 1s infinite;
+}
+
+@keyframes blink{
+  0%{
+      background-color: red;
+  }
+  50%{
+    background-color: rgb(255, 160, 160);
+  }
+  100%{
+    background-color: red;
+}
+}
